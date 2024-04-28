@@ -1,0 +1,25 @@
+# Taking input from the user
+number = float(input("Enter a number: "))
+
+# Checking conditions for zero, positive, or negative
+if number == 0:
+    print("The number is zero.")
+elif number > 0:
+    print("The number is positive.")
+else:
+    print("The number is negative.")
+
+# Taking input from the user for marks
+marks = float(input("Enter your marks: "))
+
+# Checking conditions to determine the grade
+if marks >= 75:
+    print("Grade: DISTINCTION")
+elif marks >= 60:
+    print("Grade: FIRST CLASS")
+elif marks >= 50:
+    print("Grade: SECOND CLASS")
+elif marks >= 40:
+    print("Grade: PASSED")
+else:
+    print("Grade: FAILED")
