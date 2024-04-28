@@ -1,0 +1,28 @@
+# 1. Creating tuples of same items (homogeneous) and different items (heterogeneous)
+homogeneous_tuple = (1, 2, 3, 4, 5)
+heterogeneous_tuple = ('apple', 3.14, True, [1, 2, 3])
+
+# Checking data types
+print("Data type of homogeneous_tuple:", type(homogeneous_tuple))
+print("Data type of heterogeneous_tuple:", type(heterogeneous_tuple))
+
+# 2. Tuple indexing and slicing operations
+print("First element of homogeneous_tuple:", homogeneous_tuple[0])
+print("Last element of heterogeneous_tuple:", heterogeneous_tuple[-1])
+print("Slicing homogeneous_tuple:", homogeneous_tuple[1:4])
+
+# 3. Verifying immutability of tuples
+try:
+    homogeneous_tuple[0] = 10
+except TypeError as e:
+    print("Error:", e)
+
+# 4. Using len, min, max functions on tuple
+print("Length of heterogeneous_tuple:", len(heterogeneous_tuple))
+print("Minimum value in homogeneous_tuple:", min(homogeneous_tuple))
+print("Maximum value in homogeneous_tuple:", max(homogeneous_tuple))
+
+# 5. Converting a list into a tuple and checking the data type
+my_list = [10, 20, 30, 40, 50]
+converted_tuple = tuple(my_list)
+print("Data type of converted_tuple:", type(converted_tuple))
