@@ -1,0 +1,53 @@
+# Task 1: Create lists of same and different items and check data type
+homogeneous_list = [1, 2, 3, 4, 5]
+heterogeneous_list = [1, 'two', 3.0, True, [4, 5]]
+
+print("Homogeneous List:", homogeneous_list)
+print("Data type of Homogeneous List:", type(homogeneous_list))
+print("Heterogeneous List:", heterogeneous_list)
+print("Data type of Heterogeneous List:", type(heterogeneous_list))
+print()
+
+# Task 2: List indexing
+print("Indexing the Homogeneous List:")
+print("First element:", homogeneous_list[0])
+print("Second element:", homogeneous_list[1])
+print()
+
+# Task 3: Negative list indexing
+print("Negative Indexing the Homogeneous List:")
+print("Last element:", homogeneous_list[-1])
+print("Second last element:", homogeneous_list[-2])
+print()
+
+# Task 4: List slicing
+print("Slicing the Homogeneous List:")
+print("First three elements:", homogeneous_list[:3])
+print("Last three elements:", homogeneous_list[-3:])
+print()
+
+# Task 5: List operations
+print("List Operations:")
+# Append
+homogeneous_list.append(6)
+print("After append(6):", homogeneous_list)
+# Extend
+homogeneous_list.extend([7, 8, 9])
+print("After extend([7, 8, 9]):", homogeneous_list)
+# Sort
+homogeneous_list.sort()
+print("After sort:", homogeneous_list)
+# Pop
+popped_element = homogeneous_list.pop()
+print("Popped element:", popped_element)
+print("After pop():", homogeneous_list)
+# Remove
+homogeneous_list.remove(5)
+print("After remove(5):", homogeneous_list)
+print()
+
+# Task 6: Lists are mutable
+print("Lists are Mutable:")
+print("Original List:", homogeneous_list)
+homogeneous_list[0] = 100
+print("After modifying first element:", homogeneous_list)
