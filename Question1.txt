@@ -1,0 +1,32 @@
+# Define variables x and y and assign integer values
+x = 10
+y = 3
+
+# Print the values of x and y
+print("Value of x:", x)
+print("Value of y:", y)
+
+# Perform operations on x and y and display the results
+print("\nOperations on x and y:")
+print("Multiplication:", x * y)
+print("Division:", x / y)
+print("Floor Division:", x // y)
+print("Modulus:", x % y)
+print("Exponentiation:", x ** y)
+
+# Typecasting of data in Python
+print("\nTypecasting examples:")
+# Integer to float
+integer_value = 10
+float_value = float(integer_value)
+print("Integer to Float:", float_value, "| Type:", type(float_value))
+
+# Integer to string
+integer_value = 20
+string_value = str(integer_value)
+print("Integer to String:", string_value, "| Type:", type(string_value))
+
+# String to integer
+string_value = "30"
+integer_value = int(string_value)
+print("String to Integer:", integer_value, "| Type:", type(integer_value))
