@@ -1,0 +1,49 @@
+import numpy as np
+
+# Create 1D array
+arr1d = np.array([1, 2, 3, 4, 5])
+print("1D Array:")
+print(arr1d)
+print("Dimensions:", arr1d.ndim)
+print("Type:", arr1d.dtype)
+
+# Create 2D array
+arr2d = np.array([[1, 2, 3], [4, 5, 6]])
+print("\n2D Array:")
+print(arr2d)
+print("Dimensions:", arr2d.ndim)
+print("Type:", arr2d.dtype)
+
+# Array indexing and slicing
+print("\nArray Indexing and Slicing:")
+print("Element at index 0:", arr1d[0])
+print("Slice from index 1 to 3:", arr1d[1:4])
+
+# Array arithmetic operations
+print("\nArray Arithmetic Operations:")
+arr_add = arr1d + 2
+print("Addition:", arr_add)
+arr_mult = arr1d * 3
+print("Multiplication:", arr_mult)
+arr_sub = arr1d - 1
+print("Subtraction:", arr_sub)
+
+# Min, Max, Sum
+print("\nMin, Max, Sum:")
+print("Minimum value:", np.min(arr1d))
+print("Maximum value:", np.max(arr1d))
+print("Sum of values:", np.sum(arr1d))
+
+# Sorting
+print("\nSorting:")
+arr_sorted = np.sort(arr1d)
+print("Sorted array:", arr_sorted)
+
+# Horizontal and Vertical Stacking
+print("\nHorizontal and Vertical Stacking:")
+arr_vertical = np.vstack((arr1d, arr1d))
+print("Vertical stacking:")
+print(arr_vertical)
+arr_horizontal = np.hstack((arr1d, arr1d))
+print("Horizontal stacking:")
+print(arr_horizontal)
