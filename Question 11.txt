@@ -1,0 +1,24 @@
+# Define the superclass Vehicle
+class Vehicle:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        print(f"Make: {self.make}, Model: {self.model}, Year: {self.year}")
+
+# Define the subclass Car, inheriting from Vehicle
+class Car(Vehicle):
+    def __init__(self, make, model, year, mileage):
+        super().__init__(make, model, year)
+        self.mileage = mileage
+
+    def display_info(self):
+        super().display_info()
+        print(f"Mileage: {self.mileage}")
+
+# Create an object of Car class
+car = Car("Toyota", "Camry", 2020, 5000)
+# Accessing attributes and method of Car class
+car.display_info()
