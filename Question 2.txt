@@ -1,0 +1,26 @@
+# Define variables x and y
+x = 5
+y = 8
+
+# Print the values of x and y
+print("Value of x:", x)
+print("Value of y:", y)
+
+# Comparison operations
+# Equal to
+print("x == y:", x == y)
+
+# Not equal to
+print("x != y:", x != y)
+
+# Greater than
+print("x > y:", x > y)
+
+# Less than
+print("x < y:", x < y)
+
+# Greater than or equal to
+print("x >= y:", x >= y)
+
+# Less than or equal to
+print("x <= y:", x <= y)
